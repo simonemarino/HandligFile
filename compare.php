@@ -33,7 +33,7 @@ function compare_files( string $sFileNameA, string $sFileNameB ) : ?bool{
 /**
  * @param string $sFileNameA
  * @param string $sFileNameB
- * @return array
+ * @return bool
  */
 function CheckEqualsFile(string $sFileNameA, string $sFileNameB): bool
 {

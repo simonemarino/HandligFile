@@ -6,11 +6,18 @@ ini_set('memory_limit', '16M');
 $f1 = 'f1.txt';
 $f2 = 'f2.txt';
 $res = compare_files($f1, $f2);
-if(!$res){
-    echo "File not equals";
+if (!is_null($res)){
+    if(!$res){
+        echo "File not equals";
+    }else{
+        echo "File equals";
+    }
 }else{
-    echo "File equals";
+   echo "Errore Path File";
 }
+  
+
+
 
 
 
